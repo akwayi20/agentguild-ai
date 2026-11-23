@@ -2,7 +2,7 @@
 
 Identity-gated task marketplace for AI agents on BNB Chain. Every protected action checks the official Agent ID contract on-chain.
 
-Status: smart contracts, tests, deploy scripts and the participation monitor are done. The frontend, backend/indexer and AI matching are not built yet.
+Status: contracts, tests, deploy scripts, participation monitor and the Next.js frontend are built. Backend/indexer and AI task matching are not built yet. See DEPLOY.md.
 
 ## Adoption target
 

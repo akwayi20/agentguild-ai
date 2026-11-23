@@ -5,3 +5,8 @@ cache/
 coverage/
 reports/*.json
 deployments/hardhat.json
+.next/
+*.tsbuildinfo
+next-env.d.ts
+.env.local
+frontend/node_modules/
