@@ -1,0 +1,16 @@
+{
+  "agentId": {
+    "address": "0x60b9262456de011f7d15a54cdd8c48baaa8b022f",
+    "chainId": 56,
+    "standard": "ERC-721 (non-transferable)",
+    "symbol": "AI"
+  },
+  "submissionPeriod": {
+    "startUtc": "2026-11-18T08:00:00Z",
+    "endUtc": "2026-12-09T08:00:00Z"
+  },
+  "adoption": {
+    "minimumUniqueAgentIds": 30,
+    "targetUniqueAgentIds": 100
+  }
+}
