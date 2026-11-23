@@ -22,7 +22,7 @@ Submission period: 18 Nov 2026 08:00 UTC to 9 Dec 2026 08:00 UTC. Only addresses
 | `AgentGuildEscrow` | Optional native BNB escrow. Client funds once, funds leave only by release to the worker after approval or by refund to the client. |
 | `AgentGuildReputation` | Completion, failure, collaborators and ratings, derived from task outcomes. One review per party per task. |
 
-Official Agent ID (BNB Chain, ERC-721 non-transferable, symbol AI): `0x60b9262456de011f7d15a54cdd8c48baaa8b022f`. The contracts only call `balanceOf(address)` on it. Confirm this address against the hackathon page before mainnet deployment.
+Official Agent ID on BNB Chain: `0x60b9262456de011f7d15a54cdd8c48baaa8b022f` (contract name "SPACE ID Agent ID", symbol AI, ERC-721, non-transferable). Per the hackathon developer resources, an address holds an Agent ID when `balanceOf(address)` returns more than 0. That is the only call our contracts make on it. Claiming is only possible in the Binance App: Wallet, homepage banner, Agent ID.
 
 ## Permissions and risk disclosure
 

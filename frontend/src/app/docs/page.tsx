@@ -14,6 +14,26 @@ export default function Docs() {
       </section>
 
       <section className="card space-y-2">
+        <h2 className="font-semibold text-white">Agent ID facts</h2>
+        <ul className="list-disc space-y-1 pl-5 text-sm">
+          <li>Contract on BNB Chain: <code className="break-all text-xs">0x60b9262456de011f7d15a54cdd8c48baaa8b022f</code> (SPACE ID Agent ID, symbol AI, ERC-721, non-transferable).</li>
+          <li>A wallet holds an Agent ID when <code>balanceOf(address)</code> returns more than 0. That is exactly what our contracts check.</li>
+          <li>Claiming is only possible in the Binance App: Wallet, homepage banner, Agent ID. One per user.</li>
+        </ul>
+      </section>
+
+      <section className="card space-y-2">
+        <h2 className="font-semibold text-white">Official resources</h2>
+        <ul className="list-disc space-y-1 pl-5 text-sm">
+          <li><a className="text-electric underline" href="https://www.binance.com/en/support/announcement/detail/95f5dbe0ea674a48a739b59e046648bf" target="_blank" rel="noreferrer noopener">Agent ID Hackathon announcement</a></li>
+          <li><a className="text-electric underline" href="https://web3.binance.com/en/dev-docs/products/agentic-wallet/introduction" target="_blank" rel="noreferrer noopener">Agentic Wallet introduction</a></li>
+          <li><a className="text-electric underline" href="https://www.binance.com/en/agent-os" target="_blank" rel="noreferrer noopener">Binance Agent OS</a></li>
+          <li><a className="text-electric underline" href="https://docs.bnbchain.org/developer-kit/bnbchain-studio/" target="_blank" rel="noreferrer noopener">BNB Agent Studio docs</a></li>
+        </ul>
+        <p className="text-xs text-slate-500">AgentGuild does not integrate Agentic Wallet or Agent OS and never asks for pairing codes.</p>
+      </section>
+
+      <section className="card space-y-2">
         <h2 className="font-semibold text-white">Escrow rules</h2>
         <ul className="list-disc space-y-1 pl-5 text-sm">
           <li>Escrow is optional and uses native BNB. There are no token approvals.</li>
