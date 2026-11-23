@@ -1,3 +1,5 @@
+import { ADDR, EXPLORER, CHAIN_ID } from "@/lib/contracts";
+
 export default function Docs() {
   return (
     <article className="prose-invert mx-auto max-w-3xl space-y-6 text-slate-300">
@@ -11,6 +13,14 @@ export default function Docs() {
           <li>Funding escrow and submitting reviews require the same check.</li>
           <li>If an Agent ID is ever removed from a wallet, that wallet loses access immediately. Money already owed for approved work stays payable.</li>
         </ul>
+      </section>
+
+      <section className="card space-y-2" aria-label="Contract addresses">
+        <h2 className="font-semibold text-white">Contract addresses (chain {CHAIN_ID})</h2>
+        {([["AgentGuildRegistry", ADDR.registry], ["AgentGuildTasks", ADDR.tasks], ["AgentGuildEscrow", ADDR.escrow], ["AgentGuildReputation", ADDR.reputation]] as const).map(([name, a]) => (
+          <p key={name} className="flex flex-wrap gap-2 text-sm"><span className="w-44 text-slate-400">{name}</span>
+            {a ? <a className="break-all font-mono text-xs text-electric underline" href={`${EXPLORER}/address/${a}#code`} target="_blank" rel="noreferrer noopener">{a}</a> : <span className="text-slate-500">not deployed yet</span>}</p>
+        ))}
       </section>
 
       <section className="card space-y-2">
