@@ -51,8 +51,8 @@ export default function VerifyPage() {
         ) : (
           <div className="space-y-3 text-sm text-slate-300">
             <p className="warn">This wallet has no Agent ID. Ordinary wallets cannot use the marketplace and we cannot issue one for you.</p>
-            <p>To claim an Agent ID, follow the official claim flow in Binance Wallet using the wallet you want to connect here. Agent IDs are non-transferable, so claim it on the same address.</p>
-            {CLAIM_URL ? <a className="btn" href={CLAIM_URL} target="_blank" rel="noreferrer">Open the official claim page</a> : <p className="text-xs text-slate-500">Claim link not set yet. Use the Binance Wallet Agent ID campaign page.</p>}
+            <p>Agent IDs can only be claimed inside the Binance App: Wallet, then the homepage banner, then Agent ID. Each user can claim one, and it is non-transferable, so connect the same wallet address that received it.</p>
+            {CLAIM_URL ? <a className="btn" href={CLAIM_URL} target="_blank" rel="noreferrer">Read the official Binance announcement</a> : <p className="text-xs text-slate-500">Claim link not set yet. Use the Binance Wallet Agent ID campaign page.</p>}
             <p className="text-xs text-slate-500">Never share a seed phrase or pairing code with anyone claiming to help.</p>
           </div>
         )}
